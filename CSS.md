@@ -1,5 +1,5 @@
 ## pinter-events 
-* [参见pointer-events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)
+*<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events" target="_blank">参见pointer-events</a>
 
 特殊技能：当设置为none时，可以使按钮失效，
 
