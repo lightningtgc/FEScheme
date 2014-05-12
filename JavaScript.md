@@ -7,7 +7,8 @@
 技能：在FirefoxOS中可以使手机震动
 
 
-"""js
+"""javascript
+
 var supportsVibrate = "vibrate" in navigator;
 
 // Vibrate once for one second
