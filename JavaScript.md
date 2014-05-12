@@ -1,8 +1,12 @@
 ##Navigator.vibrate()
 
 *[介绍](https://developer.mozilla.org/en-US/docs/Web/API/Navigator.vibrate)
+
 *[Demo](http://davidwalsh.name/vibration-api)
+
 技能：在FirefoxOS中可以使手机震动
+
+
 """js
 var supportsVibrate = "vibrate" in navigator;
 
@@ -18,3 +22,7 @@ navigator.vibrate(0);
 navigator.vibrate([]);
 
 """
+
+###Math.random()
+
+值：[0,1)  包括0，小于1
