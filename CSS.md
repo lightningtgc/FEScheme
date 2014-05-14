@@ -42,3 +42,15 @@ CSS:
 
 3.采用scale,将原节点结构扩大，再用scale缩放，可以完美模拟一像素
 缺点：技术要求比较高，有时需要用到原点(transform-origin)的转换
+
+
+### 媒体查询检测横竖屏幕
+(参见w3c)[http://www.w3.org/TR/css3-mediaqueries/#orientation]
+@media screen and (orientation: portrait){
+/*height > width 竖屏*/
+/*人物照*/
+} 
+@media screen and (orientation: landscape){
+/*横屏*/
+/*风景照*/
+}
