@@ -55,7 +55,8 @@ CSS:
 /*风景照*/
 }
 
-### 动画闪烁Hack（通常发生在动画开始的时候)：
+### 动画闪烁Hack：
+(一个旋转发生闪烁的例子)[http://css-tricks.com/almanac/properties/b/backface-visibility/]
 
 ```css
 -webkit-backface-visibility: hidden;
