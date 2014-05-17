@@ -45,7 +45,7 @@ CSS:
 
 
 ### 媒体查询检测横竖屏幕
-(参见w3c)[http://www.w3.org/TR/css3-mediaqueries/#orientation]
+[参见w3c介绍](http://www.w3.org/TR/css3-mediaqueries/#orientation)
 @media screen and (orientation: portrait){
 /*height > width 竖屏*/
 /*人物照*/
@@ -56,7 +56,7 @@ CSS:
 }
 
 ### 动画闪烁Hack：
-(一个旋转发生闪烁的例子)[http://css-tricks.com/almanac/properties/b/backface-visibility/]
+[一个旋转发生闪烁的例子](http://css-tricks.com/almanac/properties/b/backface-visibility/)
 
 ```css
 -webkit-backface-visibility: hidden;
