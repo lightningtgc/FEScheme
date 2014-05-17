@@ -69,3 +69,25 @@ backface-visibility: hidden;
 -ms-perspective: 1000;
 perspective: 1000;
 ```
+
+### 移动端或现代浏览器实现单行或多行省略号
+
+单行省略号
+
+```css
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap; /*防止换行*/
+```
+
+多行省略号
+
+```css
+display: -webkit-box;
+overflow : hidden;
+text-overflow: ellipsis;
+-webkit-line-clamp: 3; /*3是行数*/
+```
+
+注意点: 
+多行省略号应避免与text-align: justify;同时使用，不然会造成省略号位置错乱
