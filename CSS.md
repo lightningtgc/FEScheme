@@ -45,15 +45,21 @@ CSS:
 
 
 ### 媒体查询检测横竖屏幕
+
 [参见w3c介绍](http://www.w3.org/TR/css3-mediaqueries/#orientation)
+
+```css
 @media screen and (orientation: portrait){
 /*height > width 竖屏*/
 /*人物照*/
 } 
+
 @media screen and (orientation: landscape){
 /*横屏*/
 /*风景照*/
 }
+```
+
 
 ### 动画闪烁Hack：
 [一个旋转发生闪烁的例子](http://css-tricks.com/almanac/properties/b/backface-visibility/)
