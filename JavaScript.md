@@ -32,7 +32,7 @@ navigator.vibrate([]);
 
 
 ## 2.性能 
-(使用 http://www.jspref.com  进行测试)
+(使用 http://www.jsperf.com  进行测试)
 
 ###取整
 
