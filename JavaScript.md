@@ -9,7 +9,7 @@
 技能：在FirefoxOS中可以使手机震动
 
 
-"""javascript
+```javascript
 
 var supportsVibrate = "vibrate" in navigator;
 
@@ -24,7 +24,7 @@ navigator.vibrate([3000, 2000, 1000]);
 navigator.vibrate(0);
 navigator.vibrate([]);
 
-"""
+```
 
 ###Math.random()
 
@@ -57,17 +57,17 @@ ps：前者在多次运算性能会高一点，平常使用倒是看个人爱好
 使用XMLHttpRequest Level 2的方式
 只需在后台返回数据的头部加上对域名的支持，如下面PHP的实现
 
-"""php
+```php
 header('Access-Control-Allow-Origin:http://domain.com');
 header('Access-Control-Allow-Methods:POST,GET');
 header('Access-Control-Allow-Credentials:true'); 
-"""
+```
 
 在请求数据的XHR中加上
 
-"""js
+```js
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-"""
+```
 
 可以将cookie带过去，做一些检验之类的工作
