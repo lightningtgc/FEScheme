@@ -79,6 +79,7 @@ xhr.withCredentials = true;
 01.创建方法
 
 字面量 ：var re = /ab+c/; 
+
 调用构造函数 ： var re = new RegExp("ab+c");
 
 02.特殊字符
