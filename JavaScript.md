@@ -1,6 +1,6 @@
 ## 1.API
 
-##Navigator.vibrate()
+###Navigator.vibrate()
 
 *[介绍](https://developer.mozilla.org/en-US/docs/Web/API/Navigator.vibrate)
 
@@ -46,7 +46,7 @@ Array.push(sth) ==  Array[Array.length] = sth
 
 ps：前者在多次运算性能会高一点，平常使用倒是看个人爱好了
 
-## 3.技巧
+## 3.知识点
 
 ### 跨域
 
@@ -71,3 +71,14 @@ xhr.withCredentials = true;
 ```
 
 可以将cookie带过去，做一些检验之类的工作
+
+###正则表达式
+
+[参考资源](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+01.创建方法
+
+字面量 ：var re = /ab+c/; 
+调用构造函数 ： var re = new RegExp("ab+c");
+
+02.特殊字符
