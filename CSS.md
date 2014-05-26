@@ -2,9 +2,9 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events" target="_blank">参考资源</a>
 
 技能：当设置为none时，可以使按钮失效，
-
 eg:可以用于多个如下节点，阻止其默认事件
 （多个该节点同时设置disabled可能会有些失效）
+
 HTML:
 ```html
 <input class="upfile" type="file" accept="image/*" multiple/>
