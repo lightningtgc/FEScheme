@@ -83,3 +83,22 @@ xhr.withCredentials = true;
 调用构造函数 ： var re = new RegExp("ab+c");
 
 02.特殊字符
+
+
+###hasOwnProperty
+
+在原型链上查找属性比较耗时，对性能有副作用.
+
+hasOwnProperty是JavaScript中唯一一个只涉及对象自身属性而不会遍历原型链的方法。
+
+注意：仅仅通过判断值是否为undefined还不足以检测一个属性是否存在，一个属性可能存在而其值恰好为undefined。
+
+eg:
+```js
+for (var i in obj) {
+  //处理属性但是不查找原型链
+  if (obj.hasOwnProperty(i)){
+    //dosomething
+  }
+}
+```
