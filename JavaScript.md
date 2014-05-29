@@ -29,6 +29,7 @@ navigator.vibrate([]);
 ###Math.random()
 
 技能：随机数
+
 值：[0,1)  包括0，小于1
 
 ### requestAnimationFrame
