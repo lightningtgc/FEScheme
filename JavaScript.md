@@ -28,8 +28,31 @@ navigator.vibrate([]);
 
 ###Math.random()
 
+技能：随机数
 值：[0,1)  包括0，小于1
 
+### requestAnimationFrame
+
+技能：计时控制
+该API在移动端兼容性有点差，一般采用下面代码进行兼容
+
+```js
+frame = window.requestAnimationFrame ||
+       window.webkitRequestAnimationFrame ||
+       window.mozRequestAnimationFrame ||
+       function(callback){ 
+            //  make a timeStamp to callback,otherwise the arguments(now) will be undefined in ios4,5
+            var currTime = new Date().getTime(),
+                timeToCall = Math.max(0, 16 - (currTime - lastTime)),
+                timeOutId = setTimeout(function() {
+                    callback(currTime + timeToCall)
+                }, timeToCall);
+            lastTime = currTime + timeToCall
+            return timeOutId
+      }
+```
+
+注：使用requestAnimationFrame的回调里面会得到一个特殊的时间戳
 
 ## 2.性能 
 (使用 http://www.jsperf.com  进行测试)
