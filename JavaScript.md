@@ -126,3 +126,8 @@ for (var i in obj) {
   }
 }
 ```
+
+###点击屏幕触发的事件 触发先后顺序
+
+移动端没有mouse系列的事件
+touchstart  -->  touchend  -->  mousemove  -->  mousedown  -->  mouseup  -->  click
