@@ -55,6 +55,43 @@ frame = window.requestAnimationFrame ||
 
 注：使用requestAnimationFrame的回调里面会得到一个特殊的时间戳
 
+
+### event.stopImmediatePropagation
+
+[参见资源](https://developer.mozilla.org/zh-CN/docs/Web/API/event.stopImmediatePropagation)
+
+技能： 阻止当前事件的冒泡行为  
+       并且阻止 当前事件所在元素 上的 所有相同类型事件 的 事件处理函数 的继续执行.
+
+举个栗子：   
+
+```js
+/*
+* DOM结构 <div> <p>paragraph</p> </div>
+*/
+
+   document.querySelector("p").addEventListener("click", function(event)
+            {
+                alert("我是p元素上被绑定的第一个监听函数,会执行");
+            }, false);
+            document.querySelector("p").addEventListener("click", function(event)
+            {
+                alert("我是p元素上被绑定的第二个监听函数,会执行");
+                event.stopImmediatePropagation();
+                //执行stopImmediatePropagation方法,阻止click事件冒泡,并且阻止p元素上绑定的其他click事件的事件监听函数的执行.
+            }, false);
+            document.querySelector("p").addEventListener("click", function(event)
+            {
+                alert("我是p元素上被绑定的第三个监听函数,不会执行");
+                //该监听函数排在上个函数后面,该函数不会被执行.
+            }, false);
+            document.querySelector("div").addEventListener("click", function(event)
+            {
+                alert("我是div元素,我是p元素的上层元素,不会执行");
+                //p元素的click事件没有向上冒泡,该函数不会被执行.
+            }, false);
+```
+
 ## 2.性能 
 (使用 http://www.jsperf.com  进行测试)
 
