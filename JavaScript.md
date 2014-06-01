@@ -92,6 +92,13 @@ frame = window.requestAnimationFrame ||
             }, false);
 ```
 
+###cloneNode 克隆节点
+
+```js
+//当传true时，表示会将子节点一起克隆
+newNode=oldNode.cloneNode(true);
+```
+
 ## 2.性能 
 (使用 http://www.jsperf.com  进行测试)
 
