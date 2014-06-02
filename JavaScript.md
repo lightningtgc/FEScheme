@@ -152,6 +152,11 @@ xhr.withCredentials = true;
 
 02.特殊字符
 
+以下字符需要用反斜杠\ 转义才能正常显示：
+
+```
+$()*+.?[^|]
+```
 
 ###hasOwnProperty
 
