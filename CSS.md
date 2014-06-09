@@ -104,3 +104,5 @@ text-overflow: ellipsis;
 2.sans-serif 无衬线字体（黑体）  sans在法语中是“无”的意思，如微软雅黑 适合现代气息，一般用于电脑屏幕显示 
 
 注：为了更好的用户体验，一般一行适合放35-40个字左右
+
+###display为none时，不会形成render Tree
