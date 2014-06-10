@@ -106,3 +106,17 @@ text-overflow: ellipsis;
 注：为了更好的用户体验，一般一行适合放35-40个字左右
 
 ###display为none时，不会形成render Tree
+
+### 引起 reflow 的操作
+
+改变窗囗大小
+改变文字大小
+添加/删除样式表
+内容的改变，如用户在输入框中敲字
+激活伪类，如:hover
+操作class属性
+脚本操作DOM
+计算offsetWidth和offsetHeight
+设置style属性
+
+如果css里有expression，每次都会重新计算一遍。
