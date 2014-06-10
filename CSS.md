@@ -109,14 +109,13 @@ text-overflow: ellipsis;
 
 ### 引起 reflow 的操作
 
-改变窗囗大小
-改变文字大小
-添加/删除样式表
-内容的改变，如用户在输入框中敲字
-激活伪类，如:hover
-操作class属性
-脚本操作DOM
-计算offsetWidth和offsetHeight
-设置style属性
+* 改变窗囗大小
+* 改变文字大小
+* 添加/删除样式表
+* 内容的改变，如用户在输入框中敲字
+* 激活伪类，如:hover
+* js操作DOM
+* 计算offsetWidth和offsetHeight
+* 设置style属性
 
-如果css里有expression，每次都会重新计算一遍。
+* 如果css里有expression，每次都会重新计算一遍。
