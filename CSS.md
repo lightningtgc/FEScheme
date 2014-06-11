@@ -117,5 +117,19 @@ text-overflow: ellipsis;
 * js操作DOM
 * 计算offsetWidth和offsetHeight
 * 设置style属性
-
 * 如果css里有expression，每次都会重新计算一遍。
+
+### 清除 Webkit Search Input Styles
+
+使用下列样式可以清楚input type=search的默认样式
+
+```css
+input[type=search] {	-webkit-appearance: none;}
+
+input[type="search"]::-webkit-search-decoration, 
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+```
+
+
