@@ -181,3 +181,5 @@ for (var i in obj) {
 移动端没有mouse系列的事件
 
 touchstart  -->  touchend  -->  mousemove  -->  mousedown  -->  mouseup  -->  click
+
+### Android与iOS 差异的事件
