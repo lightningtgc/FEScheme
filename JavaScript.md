@@ -183,3 +183,11 @@ for (var i in obj) {
 touchstart  -->  touchend  -->  mousemove  -->  mousedown  -->  mouseup  -->  click
 
 ### Android与iOS 差异的事件
+
+
+###pushState
+
+单页应用中常用到的改变页面不刷新的方法：
+
+使用AJAX+pushState的方法，
+有个[jQuery的插件](https://github.com/defunkt/jquery-pjax)封装了这些操作,可以关注下
