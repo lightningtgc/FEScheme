@@ -109,6 +109,7 @@ text-overflow: ellipsis;
 
 ### 引起 reflow 的操作
 
+* 改变css样式的leeft,top,width等
 * 改变窗囗大小
 * 改变文字大小
 * 添加/删除样式表
@@ -118,6 +119,10 @@ text-overflow: ellipsis;
 * 计算offsetWidth和offsetHeight
 * 设置style属性
 * 如果css里有expression，每次都会重新计算一遍。
+
+### 引起 reflow 的操作
+
+* 改变css样式的color等
 
 ### 清除 Webkit Search Input Styles
 
