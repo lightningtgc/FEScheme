@@ -120,7 +120,7 @@ text-overflow: ellipsis;
 * 设置style属性
 * 如果css里有expression，每次都会重新计算一遍。
 
-### 引起 reflow 的操作
+### 引起 repaint 的操作
 
 * 改变css样式的color等
 
