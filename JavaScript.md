@@ -191,3 +191,6 @@ touchstart  -->  touchend  -->  mousemove  -->  mousedown  -->  mouseup  -->  cl
 
 使用AJAX+pushState的方法，
 有个[jQuery的插件](https://github.com/defunkt/jquery-pjax)封装了这些操作,可以关注下
+
+
+###canvas 要点
