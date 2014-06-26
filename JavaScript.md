@@ -194,3 +194,22 @@ touchstart  -->  touchend  -->  mousemove  -->  mousedown  -->  mouseup  -->  cl
 
 
 ###canvas 要点
+
+* 绘图方法
+
+1.路径
+
+beginPath() : 表示开始绘制路径
+
+moveTo(x, y): 设置线段的起点，可多次使用
+
+lineTo(x, y): 设置线段的终点，可多次使用
+
+stroke() : 用来给透明的线段着色,这时整条线才变得可见
+
+属性：
+
+lineWidth ： 线的宽度
+strokeStyle： 线的颜色
+
+注：还可以使用closePath方法，自动绘制一条当前点到起点的直线，形成一个封闭图形，减少使用一次lineto方法。
