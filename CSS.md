@@ -137,4 +137,22 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 ```
 
+### 横向滚动区域
+
+增加滚动的惯性效果
+
+```
+-webkit-overflow-scrolling: touch;	
+```
+
+上面的代码并不能现在上下或左右方面，可能会出现上下滚动
+（e.g. anything set to display: block; such as divs by default）
+
+此时可加上下面的代码来破这个问题：
+
+```
+white-space: nowrap;
+```
+
+then set every first child of that element to display: inline;
 
