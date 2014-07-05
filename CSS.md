@@ -156,3 +156,31 @@ white-space: nowrap;
 
 then set every first child of that element to display: inline;
 
+### image-set 图片高清普通区分加载
+
+属于CSS4范畴
+
+[参考资源](http://blog.cloudfour.com/safari-6-and-chrome-21-add-image-set-to-support-retina-images/)
+
+
+eg：
+
+```
+.test-img{
+	background-image: url(assets/no-image-set.png); 
+        background-image: -webkit-image-set(url(foo-lowres.png) 1x,
+                          url(foo-highres.png) 2x) center;
+}
+```
+
+浏览器支持情况：
+
+chrome 21 以上支持， 
+
+safari 6  以上支持，
+
+iOS 7 支持
+
+安卓2.3 不支持
+
+Firefox os 1.3.0 不支持
