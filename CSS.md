@@ -43,6 +43,7 @@ CSS:
 3.采用scale,将原节点结构扩大，再用scale缩放，可以完美模拟一像素
 缺点：技术要求比较高，有时需要用到原点(transform-origin)的转换
 
+update：iOS8 已经支持了设置 border-width: 0.5px 来实现1px border
 
 ### 媒体查询检测横竖屏幕
 
