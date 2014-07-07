@@ -21,6 +21,8 @@
 
 ### 编程思路方式
 
-1.[RESTFUL](http://baike.baidu.com/view/5798116.htm)
+1.[RESTful](http://baike.baidu.com/view/5798116.htm)
 
 满足[REST](http://en.wikipedia.org/wiki/Representational_state_transfer)的应用程序或设计
+
+[参考资源](http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming)
