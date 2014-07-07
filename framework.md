@@ -17,3 +17,10 @@
 偏代码编写风格，    
 大型项目速度较快，  
 插件功能单一性，  
+
+
+### 编程思路方式
+
+1.[RESTFUL](http://baike.baidu.com/view/5798116.htm)
+
+满足[REST](http://en.wikipedia.org/wiki/Representational_state_transfer)的应用程序或设计
