@@ -1,3 +1,19 @@
+### URL 各部分组成解析
+
+示例URL：
+
+href:      http://example.com:8888/aa/bb?q=sth#that
+
+解析：
+* protocol： http://
+* hostname： example.com
+* port：     8888
+* host:      example.com:8888
+* pathname:  /aa/bb
+* search:    ?q=sth
+* hash:      #that
+
+
 ### HTML 标签的 lang属性正确声明方式
 
 [参见](http://www.zhihu.com/question/20797118/answer/16809331)
