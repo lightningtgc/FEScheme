@@ -13,6 +13,25 @@ href:      http://example.com:8888/aa/bb?q=sth#that
 * search:    ?q=sth
 * hash:      #that
 
+### 传输头压缩类型
+
+```
+Accept-Encoding: gzip,deflate,sdch
+```
+
+压缩算法参考
+
+[gzip](http://en.wikipedia.org/wiki/Gzip)
+：一般对纯文本内容可压缩到原大小的40%
+
+[deflate](http://en.wikipedia.org/wiki/DEFLATE)
+:一种无损数据压缩算法，
+可以对gzip、PNG、MNG以及ZIP文件进行压缩从而得到比zlib更小的文件大小
+
+[sdch](http://en.wikipedia.org/wiki/SDCH)
+:通过字典压缩算法对各个页面中相同的内容进行压缩，减少相同的内容的传输。
+主要分为3个部分：首次请求，下载字典，之后的请求
+
 
 ### HTML 标签的 lang属性正确声明方式
 
