@@ -2,7 +2,10 @@
 
 示例URL：
 
-href:      http://example.com:8888/aa/bb?q=sth#that
+href: 
+```
+ http://example.com:8888/aa/bb?q=sth#that
+```
 
 解析：
 * protocol： http://
@@ -30,6 +33,7 @@ Accept-Encoding: gzip,deflate,sdch
 
 [sdch](http://en.wikipedia.org/wiki/SDCH)
 :通过字典压缩算法对各个页面中相同的内容进行压缩，减少相同的内容的传输。
+
 主要分为3个部分：首次请求，下载字典，之后的请求
 
 
