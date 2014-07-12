@@ -185,3 +185,26 @@ iOS 7 支持
 安卓2.3 不支持
 
 Firefox os 1.3.0 不支持
+
+
+### 警告的url
+
+```
+a[href='#']:after {
+	content: ''; 
+	color: red; 
+}
+```
+
+### 将微博的短链接展示成长链接
+
+```
+WB_text [action-type="feed_list_url"]{
+	font-size:0;
+}
+
+.WB_text [action-type="feed_list_url"]:after{
+	content:attr(title);
+	font-size:14px;
+}
+```
