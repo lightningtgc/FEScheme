@@ -3,7 +3,9 @@
 ```
 <meta name="revisit-after" content="2 Days"> 
 ```
+
 注：告诉浏览器多久之后，可以再过来爬数据，用于SEO
+
 PS：大部分浏览器不认这个meta，意义不大，SEO更注重网站的优质内容
 
 
