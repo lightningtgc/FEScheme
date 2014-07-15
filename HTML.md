@@ -1,13 +1,37 @@
 ### Meta Tag
 
+
+#### revisit-after"
+
 ```
 <meta name="revisit-after" content="2 Days"> 
 ```
 
-注：告诉浏览器多久之后，可以再过来爬数据，用于SEO
+注：Meta name="revisit-after" 告诉浏览器多久之后，可以再过来爬数据，用于SEO
 
 PS：大部分浏览器不认这个meta，意义不大，SEO更注重网站的优质内容
 
+
+#### dns-prefetch
+
+```
+<link rel="dns-prefetch" href="//www.domain.com" />
+<link rel="prefetch" href="http://www.domain.com" /> IE9及以上
+```
+
+注： 强制开启资源链接的DNS预加载，
+
+一般用于静态资源css，js图片之类的域名与当前域名分开
+
+PS：大部分浏览器会默认开启DNS prefetch，
+
+如果在有多域名链接会造成DNS过多查询的情况
+
+关闭的方法,在head加上下面的标签：
+
+```
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+```
 
 ### URL 各部分组成解析
 
