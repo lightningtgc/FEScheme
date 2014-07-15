@@ -1,7 +1,7 @@
 ### Meta Tag
 
 
-#### revisit-after"
+#### revisit-after
 
 ```
 <meta name="revisit-after" content="2 Days"> 
@@ -32,6 +32,13 @@ PS：大部分浏览器会默认开启DNS prefetch，
 ```
 <meta http-equiv="x-dns-prefetch-control" content="on" />
 ```
+
+参考资源：
+
+[DNS Prefetching](http://www.chromium.org/developers/design-documents/dns-prefetching)
+
+[Pre-Resolve DNS](https://developers.google.com/speed/pagespeed/service/PreResolveDns)
+
 
 ### URL 各部分组成解析
 
