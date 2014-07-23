@@ -246,3 +246,27 @@ var test = 'hello world';  //length 11
     test.substr(3, -4)    //空字符串
 ```
 注：IE对substr接收负值的处理有问题，会返回原始字符串。
+
+
+### 定义一个类
+
+```js
+function Dog(){
+    var privateVariable = 'secret';
+
+    var fn = function(){
+        //...
+    }
+
+    fn.prototype = {
+        makeNoise:function(){
+            alert('wangwangwang');
+        }
+    }
+
+    return fn;
+}
+
+```
+
+注：对Dog这个类进行封装，确保私有变量，内部原型链不被外部其他改写覆盖
