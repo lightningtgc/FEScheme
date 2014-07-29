@@ -208,3 +208,10 @@ WB_text [action-type="feed_list_url"]{
 	font-size:14px;
 }
 ```
+
+### overflow:hidden;隐藏的区域是padding之外的
+
+
+当元素设置overflow:hidden;之后，
+
+超出被隐藏的区域是padding之外的，border区域也会被隐藏
