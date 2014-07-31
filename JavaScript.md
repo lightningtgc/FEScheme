@@ -270,3 +270,64 @@ function Dog(){
 ```
 
 注：对Dog这个类进行封装，确保私有变量，内部原型链不被外部其他改写覆盖
+
+
+### innerHeight VS  scrollHeight  VS  clientHeight  VS  scrollTop
+
+参见资源：
+
+[innerHeight](https://developer.mozilla.org/en-US/docs/Web/API/Window.innerHeight)
+[scrollHeight](https://developer.mozilla.org/en-US/docs/Web/API/Element.scrollHeight)
+[clientHeight](https://developer.mozilla.org/en-US/docs/Web/API/element.clientHeight)
+[scrollTop](https://developer.mozilla.org/en-US/docs/Web/API/element.scrollTop)
+
+
+1. innerHeight:（只读）
+
+指定元素（如window,frame等,不指dom节点）viewport 的高度；没有默认值；
+
+与outHeight的区别，outHeight是包含了浏览器部分的高度，
+
+效果如图:
+
+<img src="https://mdn.mozillademos.org/files/443/FirefoxInnerVsOuterHeight2.png"/>
+
+
+2. scrollHeight:（只读）
+
+指定元素(如dom节点，document.body等)的整体高度，
+
+包括因overflow隐藏的区域和padding高度，但不包括margin高度,border高度
+
+当滚动到底部时，以下公式将成立：
+
+```
+element.scrollHeight - element.scrollTop === element.clientHeight
+```
+
+功能： 可做判断滑到底部加载更多数据的逻辑
+
+效果如图：
+
+<img src="https://mdn.mozillademos.org/files/672/scrollHeight.png"/>
+
+
+3. clientHeight:（只读）
+
+指定元素的当前可视区域的高度包括padding，不包括border及以外的区域高度
+
+注：可以看到的区域
+
+
+4. scrollTop:(读写)
+
+指定元素的当前可视区域顶部到最高点的距离，包括padding-top的值
+
+如果设置scrollTop的值为负值，会被转为0，大于最大值会被转为最大值；
+
+
+效果如图：
+
+<img src="https://mdn.mozillademos.org/files/673/scrollTop.png"/>
+
+
