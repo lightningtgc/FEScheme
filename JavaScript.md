@@ -282,7 +282,7 @@ function Dog(){
 [scrollTop](https://developer.mozilla.org/en-US/docs/Web/API/element.scrollTop)
 
 
-1. innerHeight:（只读）
+1.innerHeight:（只读）
 
 指定元素（如window,frame等,不指dom节点）viewport 的高度；没有默认值；
 
@@ -293,7 +293,7 @@ function Dog(){
 <img src="https://mdn.mozillademos.org/files/443/FirefoxInnerVsOuterHeight2.png"/>
 
 
-2. scrollHeight:（只读）
+2.scrollHeight:（只读）
 
 指定元素(如dom节点，document.body等)的整体高度，
 
@@ -312,14 +312,14 @@ element.scrollHeight - element.scrollTop === element.clientHeight
 <img src="https://mdn.mozillademos.org/files/672/scrollHeight.png"/>
 
 
-3. clientHeight:（只读）
+3.clientHeight:（只读）
 
 指定元素的当前可视区域的高度包括padding，不包括border及以外的区域高度
 
 注：可以看到的区域
 
 
-4. scrollTop:(读写)
+4.scrollTop:(读写)
 
 指定元素的当前可视区域顶部到最高点的距离，包括padding-top的值
 
