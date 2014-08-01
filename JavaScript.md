@@ -272,17 +272,18 @@ function Dog(){
 注：对Dog这个类进行封装，确保私有变量，内部原型链不被外部其他改写覆盖
 
 
-### innerHeight VS  scrollHeight  VS  clientHeight  VS  scrollTop
+### innerHeight VS  scrollHeight  VS offsetHeight VS  clientHeight  VS  scrollTop
 
 参见资源：
 
 [innerHeight](https://developer.mozilla.org/en-US/docs/Web/API/Window.innerHeight)
 [scrollHeight](https://developer.mozilla.org/en-US/docs/Web/API/Element.scrollHeight)
+[offsetHeight](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.offsetHeight)
 [clientHeight](https://developer.mozilla.org/en-US/docs/Web/API/element.clientHeight)
 [scrollTop](https://developer.mozilla.org/en-US/docs/Web/API/element.scrollTop)
 
 
-1.innerHeight:（只读）
+#####1.innerHeight:（只读）
 
 指定元素（如window,frame等,不指dom节点）viewport 的高度；没有默认值；
 
@@ -293,7 +294,7 @@ function Dog(){
 <img src="https://mdn.mozillademos.org/files/443/FirefoxInnerVsOuterHeight2.png"/>
 
 
-2.scrollHeight:（只读）
+#####2.scrollHeight:（只读）
 
 指定元素(如dom节点，document.body等)的整体高度，
 
@@ -312,14 +313,25 @@ element.scrollHeight - element.scrollTop === element.clientHeight
 <img src="https://mdn.mozillademos.org/files/672/scrollHeight.png"/>
 
 
-3.clientHeight:（只读）
+#####3.offsetHeight:(只读)
+
+指定元素(如dom节点，document.body等)的可视区域高度，
+
+包括padding，border的高度，不包括margin，不可见区域。
+
+效果如图：
+
+<img src="https://mdn.mozillademos.org/files/582/offsetHeight.png"/>
+
+
+#####4.clientHeight:（只读）
 
 指定元素的当前可视区域的高度包括padding，不包括border及以外的区域高度
 
 注：可以看到的区域
 
 
-4.scrollTop:(读写)
+#####5.scrollTop:(读写)
 
 指定元素的当前可视区域顶部到最高点的距离，包括padding-top的值
 
