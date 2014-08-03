@@ -348,3 +348,5 @@ element.scrollHeight - element.scrollTop === element.clientHeight
 与Location.assign()和location.href相比，replace不会产生历史记录，意味着通过后退按钮不能回到之前的页面，
 
 同样适应于hybrid应用，避免N个后退页面的情况发生
+
+注：location.href = url 比location.assign(url)的速度要快一些，参见[演示Demo](http://jsperf.com/location-href-vs-location-assign/2)
