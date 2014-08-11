@@ -350,3 +350,12 @@ element.scrollHeight - element.scrollTop === element.clientHeight
 同样适应于hybrid应用，避免N个后退页面的情况发生
 
 注：location.href = url 比location.assign(url)的速度要快一些，参见[演示Demo](http://jsperf.com/location-href-vs-location-assign/2)
+
+
+### 去除inline-block元素或子层为inline-block，而父层位block间的间距
+
+如：div中只放img标签，默认会有4个元素的间距
+
+解决方案：
+
+see [去除inline-block元素间间距的N种方法](http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/)
