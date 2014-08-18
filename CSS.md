@@ -215,3 +215,10 @@ WB_text [action-type="feed_list_url"]{
 当元素设置overflow:hidden;之后，
 
 超出被隐藏的区域是padding之外的，border区域也会被隐藏
+
+
+### PC browser css hack
+
+1. 样式名前使用* ： IE6，7
+
+例子： *position:relative;
