@@ -114,6 +114,7 @@ Array.push(sth) ==  Array[Array.length] = sth
 
 ps：前者在多次运算性能会高一点，平常使用倒是看个人爱好了
 
+
 ## 3.知识点
 
 ### 跨域
@@ -411,3 +412,18 @@ element.scrollHeight - element.scrollTop === element.clientHeight
 解决方案：
 
 see [去除inline-block元素间间距的N种方法](http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/)
+
+
+### Array 删除或置空,替换或插入 语义化做法
+
+使用[array.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)方法
+
+```
+array.splice(index, howMany, [addElement1,addElement2])
+```
+
+当howMany为0时，只是在index之后插入addElements;
+当addElements为空时，只是做删除操作
+
+改方法会改写原数组，并返回符合删除条件的数组。
+
