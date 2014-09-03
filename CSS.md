@@ -222,3 +222,7 @@ WB_text [action-type="feed_list_url"]{
 1. 样式名前使用* ： IE6，7
 
 例子： *position:relative;
+
+### 图片格式选择
+
+色值越多的情况下，jpg的体积会更小一些
