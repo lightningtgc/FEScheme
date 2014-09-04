@@ -108,6 +108,10 @@ newNode=oldNode.cloneNode(true);
 
 ps:  ~~  可以将 undefined 和 null 以及 字符串(包括"") 转为0，而parseInt会转为NaN
 
+注：parseInt可以将010之类的非10进制的数字转为十进制，
+
+而~~不可以转进制，但是可以把01到09转为1到9
+
 ###数组push
 
 Array.push(sth) ==  Array[Array.length] = sth
