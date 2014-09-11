@@ -43,3 +43,28 @@ function addEventHandler(el, eventType, handler){
     }
 };
 ```
+
+##### 3.暴露模块接口写法
+
+统一模块定义(UMD)
+```js
+(function(root, factory){
+    if (typeof define === 'function' && define.amd) {
+        // 支持amd,注册一个匿名模块
+        define(['a'], factory);
+    } else if (typeof exports === 'object') {
+        // 支持commonjs
+        module.exports = factory;
+    } else {
+        // 浏览器都支持的方案
+        root.moduleName = factory(root.a)
+    }
+
+})(this, function(a){
+
+    // Just return a value to define the module export.
+    // This example returns an object,
+    // but the module can return a function as the exported value.
+    return {};
+});
+```
