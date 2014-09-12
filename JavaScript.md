@@ -552,7 +552,15 @@ array.splice(index, howMany, [addElement1,addElement2])
 
 1995年JavaScript诞生时，最初像Java一样，只设置了null作为表示"无"的值。
 
-根据C语言的传统，null被设计成可以自动转为0。
+根据C语言的传统，null被设计成可以自动转为0。而undefined会被处理为NaN。
+
+例子：
+
+```js
+var num = 123 + null; //123
+
+var num = 123 + undefined; // NaN
+```
 
 JavaScript把null包含在对象类型（object）之中。
 
