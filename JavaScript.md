@@ -550,12 +550,15 @@ array.splice(index, howMany, [addElement1,addElement2])
 
 ### null的特殊之处
 
+1995年JavaScript诞生时，最初像Java一样，只设置了null作为表示"无"的值。
+
+根据C语言的传统，null被设计成可以自动转为0。
+
 JavaScript把null包含在对象类型（object）之中。
 
 ```js
 
 typeof null // "object"
-
 ```
 
 上面代码表示，查询null的类型，JavaScript返回object（对象）。
