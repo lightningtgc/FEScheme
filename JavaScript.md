@@ -547,3 +547,17 @@ array.splice(index, howMany, [addElement1,addElement2])
 
 改方法会改写原数组，并返回符合删除条件的数组。
 
+
+### null的特殊之处
+
+JavaScript把null包含在对象类型（object）之中。
+
+```js
+
+typeof null // "object"
+
+```
+
+上面代码表示，查询null的类型，JavaScript返回object（对象）。
+
+这并不是说null的数据类型就是对象，而是JavaScript早期部署中的一个约定俗成，其实不完全正确，后来再想改已经太晚了，会破坏现存代码，所以一直保留至今。
