@@ -4,6 +4,7 @@
 
 2.[Mocha](http://visionmedia.github.io/mocha/)
 
+3.[PhantomJS](http://phantomjs.org/)
 
 ####Grunt使用Tips
 
