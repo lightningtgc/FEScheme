@@ -117,8 +117,11 @@ if (window.matchMedia("(min-width: 400px)").matches) {
 
 退出全屏则是 webkitExitFullscreen
 
+navigator.standalone 可判断是否处于全屏状态，但仅对safari有用
+
 参见[这里](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Using_full_screen_mode)
 
+### window.scrollTo(0,0); 隐藏地址栏
 
 ## 2.性能 
 (使用 http://www.jsperf.com  进行测试)
