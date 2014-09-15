@@ -99,6 +99,27 @@ frame = window.requestAnimationFrame ||
 newNode=oldNode.cloneNode(true);
 ```
 
+### matchMedia 匹配媒体查询规则
+
+[Window.matchMedia(mediaQueryString)](https://developer.mozilla.org/en-US/docs/Web/API/Window.matchMedia)
+
+符合mediaQueryString的要求进行相应处理
+
+```js
+if (window.matchMedia("(min-width: 400px)").matches) {
+  /* the view port is at least 400 pixels wide */
+} else {
+  /* the view port is less than 400 pixels wide */
+}
+```
+
+### element.webkitRequestFullScreen() 调用全屏
+
+退出全屏则是 webkitExitFullscreen
+
+参见[这里](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Using_full_screen_mode)
+
+
 ## 2.性能 
 (使用 http://www.jsperf.com  进行测试)
 
@@ -591,3 +612,5 @@ typeof null // "object"
 上面代码表示，查询null的类型，JavaScript返回object（对象）。
 
 这并不是说null的数据类型就是对象，而是JavaScript早期部署中的一个约定俗成，其实不完全正确，后来再想改已经太晚了，会破坏现存代码，所以一直保留至今。
+
+
