@@ -651,12 +651,41 @@ typeof null // "object"
 这并不是说null的数据类型就是对象，而是JavaScript早期部署中的一个约定俗成，其实不完全正确，后来再想改已经太晚了，会破坏现存代码，所以一直保留至今。
 
 
-### console.assert
+### console相关
 
-当你想代码满足某些条件时才输出信息到控制台，那么你大可不必写if或者三元表达式来达到目的，
+#### console.profile
 
-cosole.assert会先对传入的表达式进行断言，只有表达式为假时才输出相应信息到控制台。
+用于分析程序各个部分的运行时间，找出性能瓶颈所在，
 
-### console.count
+例子：
+
+```js
+　　function Foo(){
+　　　　for(var i=0;i<10;i++){funcA(1000);}
+　　　　funcB(10000);
+　　}
+　　function funcA(count){
+　　　　for(var i=0;i<count;i++){}
+　　}
+　　function funcB(count){
+　　　　for(var i=0;i<count;i++){}
+　　}
+　　
+　　console.profile('性能分析器一');
+　　Foo();
+　　console.profileEnd();
+```
+
+运行例子可以得到对Foo的性能分析报告（耗时之类的），
+
+在chrome dev tool的Profiles面板里面可以看到详情。
+
+#### console.assert
+
+用于判断某个表达式或变量是否为真.
+
+先对传入的表达式进行断言，只有表达式为假时才输出相应信息到控制台。
+
+#### console.count
 
 统计执行的次数
