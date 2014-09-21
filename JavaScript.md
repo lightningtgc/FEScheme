@@ -145,6 +145,14 @@ ps：前者在多次运算性能会高一点，平常使用倒是看个人爱好
 
 ## 3.知识点
 
+### null && undefined
+
+undefined 表示未定义，不能被delete删除
+
+null 表示一个空对象指针，所以typeof null 会返回object
+
+undefined 派生自null
+
 ### 跨域
 
 #### XHR2.0
@@ -424,6 +432,27 @@ for (var i in obj) {
     //dosomething
   }
 }
+```
+
+注：如果hasOwnProperty被占用，可用下面的解决方案
+
+```js
+var obj = {
+       hasOwnProperty: function(){
+              return false;
+       },
+       prop: 'can not read'
+
+}
+
+obj.hasOwnProperty('prop'); // always false
+
+//解决方案
+Object.hasOwnProperty.call(obj, 'prop');// 返回 true
+
+// or 在原型链上，防止该方法被重写
+Object.prototype.hasOwnProperty.call(obj, 'prop');// 返回 true
+{}["prototype"].hasOwnProperty.call(obj, 'prop') // {}.**的写法在chrome上报错
 ```
 
 ###点击屏幕触发的事件 触发先后顺序
