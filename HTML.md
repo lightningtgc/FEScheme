@@ -94,6 +94,22 @@ rel='prerender' 表示浏览器会帮我们渲染但隐藏指定的页面，一�
 * 占用资源很多的页面
 * 打开了 chrome developer tools 开发工具
 
+注： 可在 chrome://cache/ 或 chrome://net-internals/#prerender 中查看是否缓存成功。
+
+Firefox 可以在 about:cache 中查看。
+
+##### 代码控制预渲染操作
+
+在 head 中插入 link[rel='prerender'] 即可：
+
+```html
+var newLink =document.createElement("link")
+newLink.setAttribute(“rel”,”prerender”)
+newLink.setAttribute(“href”,”next-page.html”)
+document.getElementsByTagName(“head”)[0].appendChild(newLink)
+```
+
+
 ### URL 各部分组成解析
 
 示例URL：
