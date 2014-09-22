@@ -63,6 +63,37 @@ rel='prefetch' 表示当 subresource 所有资源都加载完后，开始预加�
 
 注意：只有可缓存的资源才进行预加载，否则浪费资源
 
+#### Pre render
+
+页面预加载能加载下一个将打开的整个页面
+
+Chrome:
+```html
+<link rel='prerender' href='http://www.pagetoprerender.com'>
+```
+
+Firefox 使用 rel="next"来声明
+
+```html
+<link rel="next" href="http://www.pagetoprerender.com">
+```
+
+rel='prerender' 表示浏览器会帮我们渲染但隐藏指定的页面，一旦我们访问这个页面，则秒开了！
+
+##### 不是所有的资源都可以预加载
+
+当资源为以下列表中的资源时，将阻止预渲染操作：
+
+* URL 中包含下载资源
+* 页面中包含音频、视频
+* POST、PUT 和 DELETE 操作的 ajax 请求
+* HTTP 认证(Authentication)
+* HTTPS 页面
+* 含恶意软件的页面
+* 弹窗页面
+* 占用资源很多的页面
+* 打开了 chrome developer tools 开发工具
+
 ### URL 各部分组成解析
 
 示例URL：
