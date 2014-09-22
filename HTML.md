@@ -39,6 +39,29 @@ PS：大部分浏览器会默认开启DNS prefetch，
 
 [Pre-Resolve DNS](https://developers.google.com/speed/pagespeed/service/PreResolveDns)
 
+#### Resource prefetch
+
+资源文件下载
+
+chrome:
+```html
+<link rel='subresource' href='main.js'>
+<link rel='subresource' href='main.css'>
+
+<link rel='prefetch' href='resource.js'>
+```
+
+Firefox 中使用meta的写法
+
+```html
+<meta http-equiv="Link" content="<main.js>; rel=prefetch">
+```
+
+rel='subresource' 表示当前页面必须加载的资源，应该放到页面最顶端先加载，有最高的优先级。
+
+rel='prefetch' 表示当 subresource 所有资源都加载完后，开始预加载这里指定的资源，有最低的优先级。
+
+注意：只有可缓存的资源才进行预加载，否则浪费资源
 
 ### URL 各部分组成解析
 
