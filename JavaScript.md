@@ -735,6 +735,6 @@ typeof null // "object"
 * 对方是字符串，直接比较；
 * 其他返回false
 
-4. 如果是数字，对方是对象，对象取valueOf进行比较, 其他一律返回false
+4.如果是数字，对方是对象，对象取valueOf进行比较, 其他一律返回false
 
-5. null, undefined不会进行类型转换, 但它们俩相等
+5.null, undefined不会进行类型转换, 但它们俩相等
