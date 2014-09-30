@@ -251,3 +251,7 @@ WB_text [action-type="feed_list_url"]{
 
 色值越多的情况下，jpg的体积会更小一些
 
+
+### caniuse系列，浏览器兼容性
+
+#### position:fixed;不适用情况： IE6 以及 ios5以下
