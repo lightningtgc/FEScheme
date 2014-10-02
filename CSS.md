@@ -1,3 +1,29 @@
+### rem 单位 （root element ——html）
+
+根元素(html)默认的 font-size 都是 16px；
+
+rem与px的区别：px的字体在页面放大缩小之后是不会变化的，
+
+rem与em的区别：
+
+em 的计算是基于父级元素的，rem是基于根元素html的
+
+可通过下面代码换算px与rem
+
+```css
+html {
+
+font-size:62.5%; /* 10÷16=62.5% */
+
+}
+
+.new-style {
+	font-size: 14px;
+	font-size: 1.4rem; /*有个小数点*/
+}
+```
+
+
 ### pinter-events 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events" target="_blank">参考资源</a>
 
