@@ -277,7 +277,29 @@ WB_text [action-type="feed_list_url"]{
 
 色值越多的情况下，jpg的体积会更小一些
 
+### [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+
+
+#### box-sizing: content-box
+
+默认样式。 计算宽高只计算content的，不包括padding，border，margin。
+
+
+#### box-sizing: padding-box
+
+计算宽高只计算content, padding的，不包括border，margin。
+
+
+#### box-sizing: border-box
+
+计算宽高只计算content, padding, border的，不包括margin。
+
+常用于IE中文档为 怪异模式 Quirks mode.
+
+
 
 ### caniuse系列，浏览器兼容性
 
 #### position:fixed;不适用情况： IE6 以及 ios5以下
+
+
