@@ -1,12 +1,14 @@
 ### 行内元素 vs 块级元素
 
+注： 可从默认display的值体现
+
 * 行内元素有：a b span img input select strong
 
 * 块级元素有：div ul ol li dl dt dd (h1 h2 h3 h4…) p
 
-* 空元素： <br> <hr> <img> <input> <link> <meta> 
+* 空元素： br hr img input link meta 
 
-* 鲜为人知的空元素是： <area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>
+* 鲜为人知的空元素是： area base col command embed keygen param source track wbr
 
 ### rem 单位 （root element ——html）
 
