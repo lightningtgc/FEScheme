@@ -1,3 +1,13 @@
+### 行内元素 vs 块级元素
+
+* 行内元素有：a b span img input select strong
+
+* 块级元素有：div ul ol li dl dt dd (h1 h2 h3 h4…) p
+
+* 空元素： <br> <hr> <img> <input> <link> <meta> 
+
+* 鲜为人知的空元素是： <area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>
+
 ### rem 单位 （root element ——html）
 
 根元素(html)默认的 font-size 都是 16px；
