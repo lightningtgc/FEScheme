@@ -732,15 +732,21 @@ HTML5标准 ： 4毫秒
 例子：
 
 ```js
-　　function Foo(){
-　　　　for(var i=0;i<10;i++){funcA(1000);}
+    function Foo(){
+　　   for(var i=0;i<10;i++){
+　　     funcA(1000);
+　　   }
 　　　　funcB(10000);
 　　}
 　　function funcA(count){
-　　　　for(var i=0;i<count;i++){}
+　　　　for(var i=0;i<count;i++){
+　　　　
+　　　　}
 　　}
 　　function funcB(count){
-　　　　for(var i=0;i<count;i++){}
+　　　　for(var i=0;i<count;i++){
+　　　　
+　　　　}
 　　}
 　　
 　　console.profile('性能分析器一');
