@@ -2,9 +2,18 @@
 
 注： 可从默认display的值体现
 
-* 行内元素有：a b span img input select strong
+* 内联元素(inline)有：a b span select strong
+ 
+特点：宽高，padding(margin)的top或者bottom不可控制，但padding(margin)的left和right可以控制
 
-* 块级元素有：div ul ol li dl dt dd (h1 h2 h3 h4…) p
+* inline-block元素： input  img  button  texterea  label
+
+特点：拥有内在尺寸，可设置宽高,padding,margin，但不会自动换行
+
+
+* 块级元素(block)有：div ul ol li dl dt dd (h1 h2 h3 h4…) p
+ 
+特点：独占一行，宽高,padding,margin可以控制
 
 * 空元素： br hr img input link meta 
 
