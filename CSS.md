@@ -4,16 +4,16 @@
 
 * 内联元素(inline)有：a b span select strong
  
-特点：宽高，padding(margin)的top或者bottom不可控制，但padding(margin)的left和right可以控制
+  特点：宽高，padding(margin)的top或者bottom不可控制，但padding(margin)的left和right可以控制
 
 * inline-block元素： input  img  button  texterea  label
 
-特点：拥有内在尺寸，可设置宽高,padding,margin，但不会自动换行
+  特点：拥有内在尺寸，可设置宽高,padding,margin，但不会自动换行
 
 
 * 块级元素(block)有：div ul ol li dl dt dd (h1 h2 h3 h4…) p
  
-特点：独占一行，宽高,padding,margin可以控制
+  特点：独占一行，宽高,padding,margin可以控制
 
 * 空元素： br hr img input link meta 
 
@@ -293,6 +293,11 @@ WB_text [action-type="feed_list_url"]{
 1. 样式名前使用* ： IE6，7
 
 例子： *position:relative;
+
+
+#### 关于letter-spacing的妙用
+
+可以用于消除inline-block元素间的换行符空格间隙问题
 
 ### 图片格式选择
 
