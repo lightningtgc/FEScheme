@@ -459,6 +459,15 @@ xyz是一个字符集合。用于匹配方括号中得任意字符。
 
       /^(https?:\/\/)?([^/]+\.)?qq\.com(?=\/|\?|\:\d|$)/i 
 
+##### 千分位格式化
+
+形如： 10,000,000
+
+```js
+function convertThousands(num) {
+       return (num || 0).toString().replace(/(d)(?=(?:d{3})+$)/g, '$1,');
+}
+```
 ###hasOwnProperty
 
 在原型链上查找属性比较耗时，对性能有副作用.
