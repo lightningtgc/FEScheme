@@ -328,4 +328,24 @@ WB_text [action-type="feed_list_url"]{
 
 #### position:fixed;不适用情况： IE6 以及 ios5以下
 
+#### trim 不适用情况： IE8及以下版本,safari4及以下版本
+
+### 操纵css
+
+####insertRule
+
+[参见CSSStyleSheet.insertRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet.insertRule)
+
+功效：可实现动态插入css样式表
+
+步骤如下：
+
+1.创建style标签并插入到HTML中的head中
+
+2.拿到刚创建的style标签的sheet
+
+3.调用sheet的insertRule()方法,将样式插入页面中
+
+注:insertRule(rule, index),其中的index一般为rule的长度
+
 
