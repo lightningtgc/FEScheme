@@ -332,9 +332,11 @@ WB_text [action-type="feed_list_url"]{
 
 ### 操纵css
 
-####insertRule
+#### insertRule
 
 [参见CSSStyleSheet.insertRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet.insertRule)
+
+[W3c标准](http://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/css.html#CSS-CSSStyleSheet-insertRule)
 
 功效：可实现动态插入css样式表
 
@@ -348,4 +350,79 @@ WB_text [action-type="feed_list_url"]{
 
 注:insertRule(rule, index),其中的index一般为rule的长度
 
+浏览器支持： IE9及以上，现代浏览器
 
+旧版本IE可以使用非标准方法addRule(styleName, styleValue, index)
+
+例子：
+
+```html
+<head>
+    <script type="text/javascript">
+        function CreateStyleRule () {
+                // create a new style sheet 
+            var styleTag = document.createElement ("style");
+            var head = document.getElementsByTagName ("head")[0];
+            head.appendChild (styleTag);
+
+            var sheet = styleTag.sheet ? styleTag.sheet : styleTag.styleSheet;
+            
+                // add a new rule to the style sheet
+            if (sheet.insertRule) {
+                sheet.insertRule ("body {background:red;}", 0);
+            } 
+            else {
+                sheet.addRule ("body", "background:red", 0);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="CreateStyleRule ();">Create a new style rule!</button>
+</body>
+```
+
+#### deleteRule
+
+[参见CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet.deleteRule)
+
+功效：在获取到的sheet中删除某个位置的样式
+
+语法：
+
+```css
+stylesheet.deleteRule(index)
+```
+
+#### 引入样式文件全浏览器兼容
+
+旧版本的IE可以使用addImport方法来引入一个css文件
+
+例子：
+
+```html
+<head>
+    <style id="myStyle">
+    </style>
+    <script type="text/javascript">
+        function ImportStyleFile () {
+            var styleTag = document.getElementById ("myStyle");
+
+                // the empty style sheet
+            var sheet = styleTag.sheet ? styleTag.sheet : styleTag.styleSheet;
+            
+            if (sheet.insertRule) { // all browsers, except IE before version 9
+                sheet.insertRule ("@import url('style.css');", 0);
+            }
+            else {  // Internet Explorer  before version 9
+                if (sheet.addImport) {
+                    sheet.addImport ("style.css");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ImportStyleFile ();">Import a style file</button>
+</body>
+```
