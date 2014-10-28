@@ -1,4 +1,4 @@
-### 水平垂直居中
+### 水平垂直居中 （浮动元素）
 
 用途：弹窗，提醒之类的
 
@@ -19,7 +19,7 @@
 
 注：兼容性不错，但需知道宽高才能计算margin的值，可借助js进行计算
 
-另一种方法
+另一种方法: margin:auto; (support >=IE9)
 
 ```css
 .cneter-middle{
@@ -36,7 +36,7 @@
 }
 ```
 
-注：IE8及以下会失效，即使不给高度也能居中，但是展示的高度需再进行处理
+注：IE8及以下会失效，即使指定了宽度不给高度也能居中，高度由top,bottom与height相互影响决定
 
 ##### 2.未知宽高
 
@@ -52,6 +52,50 @@
 注：属于css3范畴，适用于移动web开发，
 
 可用于固定了宽度，内容是动态变化的窗口
+
+##### 3.table-cell方法 (support <=IE8)
+
+垂直居中一个img元素
+
+```css
+.the-img{
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+}
+```
+
+注：IE6,7不支持该方法，IE6，7可使用以下的font-size的方法是实现
+
+
+##### 4.font-size方法（仅支持IE6，7）
+
+如果父元素高度是已知的，要把它里面的子元素进行水平垂直居中，且子元素的宽度或高度都不必知道，则可以使用这种方法。
+
+要点：给父元素设一个合适的font-size的值（该父元素的高度除以1.14），并且子元素必须是一个inline或inline-block元素，
+
+此外子元素需要加上vertical-align:middle;
+
+```css
+.parent{
+	height:200px;
+	width:200px;
+	font-size:175.4px; /*height200px 除以 1.14*/
+	
+	text-align:center;
+}
+.child{
+	display:inline-block;/*如果要居中的元素是图片等行内元素，则可以省略此步*/
+	vertical-align:middle;/*must*/
+	zoom:1;/*触发IE浏览器的haslayout,解决ie下的浮动，margin重叠等问题*/
+	font-size:14px;/*子元素恢复正常的字体大小*/
+	width:50px;
+	height:50px;
+	
+}
+```
+
+注：如果 vertical-align:middle 是写在父元素中而不是子元素中，这样也是可以的，只不过计算font-size时使用的  1.14 这个 数值要变成大约 1.5 这个值
 
 
 ### 行内元素 vs 块级元素
