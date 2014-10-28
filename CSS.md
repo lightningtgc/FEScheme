@@ -1,3 +1,23 @@
+#### 水平垂直居中一个元素
+
+用途：弹窗，提醒之类的
+
+##### 已知宽高
+```css
+.cneter-middle{
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	margin:auto;/*很重要，决定了按宽高之外的自动计算渲染（居中）*/
+	
+	width:100px;
+	height:100px;
+	
+}
+```
+
 ### 行内元素 vs 块级元素
 
 注： 可从默认display的值体现
