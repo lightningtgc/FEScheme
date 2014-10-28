@@ -394,6 +394,19 @@ WB_text [action-type="feed_list_url"]{
 
 例子： *position:relative;
 
+#### 浏览器兼容问题
+
+1.zoom
+
+仅IE支持，原义是用来缩放页面内容
+
+display:inline-block;在IE6，7的支持性不好，可配合zoom:1来解决这些问题
+
+清除浮动配合overflow:hidden;_zoom:1;(IE6 hack)
+
+```css
+zoom:1;/*触发IE浏览器的haslayout,解决ie下的浮动，margin重叠等问题*/
+```
 
 #### 关于letter-spacing的妙用
 
