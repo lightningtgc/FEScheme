@@ -1,8 +1,26 @@
-#### 水平垂直居中一个元素
+### 水平垂直居中
 
 用途：弹窗，提醒之类的
 
-##### 已知宽高
+##### 1.已知宽高
+
+```css
+.cneter-middle {
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;    /* 高度的一半 */
+    margin-left: -100px;    
+    
+    width:200px;
+    height:300px;
+}
+```
+
+注：兼容性不错，但需知道宽高才能计算margin的值，可借助js进行计算
+
+另一种方法
+
 ```css
 .cneter-middle{
 	position:absolute;
@@ -17,6 +35,24 @@
 	
 }
 ```
+
+注：IE8及以下会失效，即使不给高度也能居中，但是展示的高度需再进行处理
+
+##### 2.未知宽高
+
+```css
+.center-middle {
+	position:absolte;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+}
+```
+
+注：属于css3范畴，适用于移动web开发，
+
+可用于固定了宽度，内容是动态变化的窗口
+
 
 ### 行内元素 vs 块级元素
 
