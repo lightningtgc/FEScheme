@@ -25,6 +25,9 @@ navigator.vibrate(0);
 navigator.vibrate([]);
 
 ```
+### Element.getBoundingClientRect
+
+[参见](https://developer.mozilla.org/zh-CN/docs/Web/API/Element.getBoundingClientRect)
 
 ###Math.random()
 
