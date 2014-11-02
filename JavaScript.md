@@ -29,6 +29,8 @@ navigator.vibrate([]);
 
 [参见Element.getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element.getBoundingClientRect)
 
+[CSSOM View Module : The ClientRect Interface](http://www.w3.org/TR/cssom-view/#the-clientrect-interface)
+
 ###Math.random()
 
 技能：随机数
