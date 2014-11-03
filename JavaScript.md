@@ -30,7 +30,8 @@ navigator.vibrate([]);
 
 [参见CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent)
 
-eg:
+1. 自定义事件：
+
 ```js
 var event = new CustomEvent(
 	"newMessage", 
@@ -40,9 +41,21 @@ var event = new CustomEvent(
 			time: new Date(),
 		},//当事件触发时外部可调用到的内容
 		bubbles: true,//如果为true，则会冒泡到触发事件的祖先节点上
-		cancelable: true//如果为true的话，调用stopPropagation() 可以取消
+		cancelable: true//如果为true的话，调用stopPropagation() 的方法，可以取消这个事件
 	}
 );
+```
+
+2.调用这个自定义事件
+
+```
+document.getElementById("test").dispatchEvent(event);
+```
+
+3. 监听该事件,做相应处理
+
+```
+document.addEventListener("newMessage", newMessageHandler, false);
 ```
 
 
