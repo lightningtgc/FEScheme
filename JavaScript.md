@@ -25,6 +25,27 @@ navigator.vibrate(0);
 navigator.vibrate([]);
 
 ```
+
+### 自定义事件CustomEvent
+
+[参见CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent)
+
+eg:
+```js
+var event = new CustomEvent(
+	"newMessage", 
+	{
+		detail: {
+			message: "Hello World!",
+			time: new Date(),
+		},//当事件触发时外部可调用到的内容
+		bubbles: true,//如果为true，则会冒泡到触发事件的祖先节点上
+		cancelable: true//如果为true的话，调用stopPropagation() 可以取消
+	}
+);
+```
+
+
 ### Element.getBoundingClientRect
 
 [参见Element.getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element.getBoundingClientRect)
