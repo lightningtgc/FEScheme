@@ -539,3 +539,10 @@ stylesheet.deleteRule(index)
     <button onclick="ImportStyleFile ();">Import a style file</button>
 </body>
 ```
+
+
+### CSS3
+
+#### 1.渐变色
+
+[参考资源](http://css-tricks.com/css3-gradients/)
