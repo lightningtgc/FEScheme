@@ -546,3 +546,5 @@ stylesheet.deleteRule(index)
 #### 1.渐变色
 
 [参考资源](http://css-tricks.com/css3-gradients/)
+
+浏览器支持：IE10，现代浏览器，移动webview
