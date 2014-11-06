@@ -137,6 +137,16 @@ frame = window.requestAnimationFrame ||
 //当传true时，表示会将子节点一起克隆
 newNode=oldNode.cloneNode(true);
 ```
+### toLocaleUpperCase vs toUpperCase
+
+两者都是转换为大写字母，
+
+但toLocaleUpperCase可以对一些没有按照Unicode编码处理的区域的语言如土耳其文，不进行特殊处理。
+
+[资源参见](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase)
+
+[相关bug参见](http://stackoverflow.com/questions/1850232/turkish-case-conversion-in-javascript)
+
 
 ### matchMedia 匹配媒体查询规则
 
