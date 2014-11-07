@@ -245,6 +245,8 @@ xhr.withCredentials = true;
 
 [参考资源](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
+[正则详细分析工具](https://www.debuggex.com/)
+
 #### 01.创建方法
 
 字面量 ：var re = /ab+c/; 
