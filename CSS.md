@@ -548,3 +548,9 @@ stylesheet.deleteRule(index)
 [参考资源](http://css-tricks.com/css3-gradients/)
 
 浏览器支持：IE10，现代浏览器，移动webview
+
+### 浏览器特性
+
+#### chrome
+
+##### window下chrome（测试版本chrome38）最小字体默认为12px，Mac下chrome（测试版本为37.0.2）字体没有最小限制
