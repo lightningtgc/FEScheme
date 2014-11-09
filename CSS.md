@@ -304,6 +304,11 @@ white-space: nowrap;
 
 then set every first child of that element to display: inline;
 
+### CSS的清除浮动(clear)
+
+一定要牢记：这个规则只能影响使用清除的元素本身，不能影响其他元素
+
+
 ### image-set 图片高清普通区分加载
 
 属于CSS4范畴
