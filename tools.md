@@ -69,3 +69,13 @@ function addEventHandler(el, eventType, handler){
     return {};
 });
 ```
+
+
+### 用ES5实现ES6功能
+
+[6to5](https://github.com/6to5/6to5)
+
+[支持ES6模块写法的gulp插件](https://github.com/sindresorhus/gulp-6to5)
+
+[支持ES6模块写法的grunt插件](https://github.com/sindresorhus/grunt-6to5)
+
