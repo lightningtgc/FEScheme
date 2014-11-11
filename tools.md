@@ -1,4 +1,4 @@
-####测试框架：
+###测试框架：
 
 1.[Jest](http://facebook.github.io/jest/)
 
@@ -6,11 +6,25 @@
 
 3.[PhantomJS](http://phantomjs.org/)
 
-####Grunt使用Tips
+### Grunt使用Tips
+ 
+#### Grunt 常用插件
 
-#### 代码工具块
+#####  grunt-usemin
 
-##### 1.判断DOM是否ready（全浏览器兼容）
+[grunt-usemin](https://github.com/yeoman/grunt-usemin)
+
+用途：常用来压缩css，js代码，合并html中的多个js和css的请求，并支持以MD5的形式重命名文件
+
+##### time-grunt
+
+[time-grunt](https://github.com/sindresorhus/time-grunt)
+
+用途：生成各个任务运行完成的时间与整个构建过程的时间，常用于优化分析
+
+### 代码工具块
+
+#### 1.判断DOM是否ready（全浏览器兼容）
 
 ```js
 function domReady(callback){
@@ -31,7 +45,7 @@ function domReady(callback){
     }
 };
 ```
-##### 2.监听事件(全浏览器兼容)
+#### 2.监听事件(全浏览器兼容)
 
 ```js
 function addEventHandler(el, eventType, handler){
@@ -45,7 +59,7 @@ function addEventHandler(el, eventType, handler){
 };
 ```
 
-##### 3.暴露模块接口写法
+#### 3.暴露模块接口写法
 
 统一模块定义(UMD)
 ```js
