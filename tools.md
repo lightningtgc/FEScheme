@@ -10,6 +10,12 @@
  
 #### Grunt 常用插件
 
+* 安装方式：在命令行中执行以下命令
+
+```
+npm install --save-dev 文件名
+```
+
 #####  grunt-usemin
 
 [grunt-usemin](https://github.com/yeoman/grunt-usemin)
@@ -21,6 +27,30 @@
 [time-grunt](https://github.com/sindresorhus/time-grunt)
 
 用途：生成各个任务运行完成的时间与整个构建过程的时间，常用于优化分析
+
+用法：
+
+```
+module.exports = function (grunt) {
+    // 需要写在顶部
+    require('time-grunt')(grunt);
+
+    grunt.initConfig();
+}
+```
+
+##### jit-grunt
+
+[jit-grunt](https://github.com/shootaroo/jit-grunt)
+
+用途：用于优化加载插件，不加载用不到的插件，只需一行代码来加载任务，不需要写多行的grunt.loadNpmTasks(''）
+
+优点: 速度要比load-grunt-tasks快
+
+用法：
+```
+require('jit-grunt')(grunt);
+```
 
 ### 代码工具块
 
