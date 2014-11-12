@@ -558,6 +558,14 @@ Object.prototype.hasOwnProperty.call(obj, 'prop');// 返回 true
 {}["prototype"].hasOwnProperty.call(obj, 'prop') // {}.**的写法在chrome上报错
 ```
 
+### 实现向节点最前插入节点prependChild
+
+```
+Node.prototype.prependChild = function(el) {
+    this.childNodes[1]&&this.insertBefore(el, this.childNodes[1]) || this.appendChild(el);
+}
+```
+
 ###点击屏幕触发的事件 触发先后顺序
 
 移动端没有mouse系列的事件
