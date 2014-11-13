@@ -18,13 +18,13 @@ npm install --save-dev 文件名
 
 #####  grunt-usemin
 
-[grunt-usemin](https://github.com/yeoman/grunt-usemin)
+[参见grunt-usemin](https://github.com/yeoman/grunt-usemin)
 
 用途：常用来压缩css，js代码，合并html中的多个js和css的请求，并支持以MD5的形式重命名文件
 
 ##### time-grunt
 
-[time-grunt](https://github.com/sindresorhus/time-grunt)
+[参见time-grunt](https://github.com/sindresorhus/time-grunt)
 
 用途：生成各个任务运行完成的时间与整个构建过程的时间，常用于优化分析
 
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
 
 ##### jit-grunt
 
-[jit-grunt](https://github.com/shootaroo/jit-grunt)
+[参见jit-grunt](https://github.com/shootaroo/jit-grunt)
 
 用途：用于优化加载插件，不加载用不到的插件，只需一行代码来加载任务，不需要写多行的grunt.loadNpmTasks(''）
 
@@ -50,6 +50,24 @@ module.exports = function (grunt) {
 用法：
 ```
 require('jit-grunt')(grunt);
+```
+
+#### grunt-concurrent
+
+[参见grunt-concurrent](https://github.com/sindresorhus/grunt-concurrent)
+
+用途：用于同步执行任务(例如Coffee和Sass之间彼此无关，可以同时执行的任务)，加快构建速度
+
+注意：同步执行的任务需考虑task之间的依赖关系
+
+用法：
+```
+grunt.initConfig({
+    concurrent: {
+        target1: ['coffee', 'sass'],
+        target2: ['jshint', 'mocha']
+    }
+});
 ```
 
 ### 代码工具块
