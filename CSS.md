@@ -144,6 +144,32 @@ font-size:62.5%; /* 10÷16=62.5% */
 }
 ```
 
+### vw && vh && vmin && vmax
+
+说明：css 值的单位（类似百分比），能随着viewport的变化而变化
+
+eg:
+
+```
+.sth-style {
+  width: 10vw;
+  height: 20vh;
+}
+```
+与百分比类似，1% 与 1vw相似，
+
+但两者的区别在于vw是与父元素无关的，与viewport大小相关。
+
+vw："viewport width";
+vh: "viewport height";
+vmin: "vh或vw中最小的那一个"；
+vmax: "vh或vw中最大的那一个"
+
+浏览器支持情况：
+
+```
+IE 10+, Firefox 19+, Chrome 34+, Safari 7+, Android 4.4+, iOS 6+
+```
 
 ### pinter-events 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events" target="_blank">参考资源</a>
@@ -186,7 +212,6 @@ CSS:
 
 2.采用box-shadow,可以实现1个半像素的效果
 缺点：半个像素是渐变的效果，因为不透明，所以效果还是不理想
-
 3.采用scale,将原节点结构扩大，再用scale缩放，可以完美模拟一像素
 缺点：技术要求比较高，有时需要用到原点(transform-origin)的转换
 
@@ -246,7 +271,7 @@ text-overflow: ellipsis;
 注意点: 
 多行省略号应避免与text-align: justify;同时使用，不然会造成省略号位置错乱
 
-###排版
+### 排版
 
 1.serif 衬线字体（白体） 如宋体、细明体，适合古代气息，一般用于印刷业，容易造成视觉疲劳
 2.sans-serif 无衬线字体（黑体）  sans在法语中是“无”的意思，如微软雅黑 适合现代气息，一般用于电脑屏幕显示 
@@ -559,3 +584,6 @@ stylesheet.deleteRule(index)
 #### chrome
 
 ##### window下chrome（测试版本chrome38）最小字体默认为12px，Mac下chrome（测试版本为37.0.2）字体没有最小限制
+
+
+
