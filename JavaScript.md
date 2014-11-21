@@ -871,3 +871,22 @@ HTML5标准 ： 4毫秒
 ### source-map
 
 ### 反转DOM元素的子节点
+
+上代码：
+```js
+function reverseDom(el){
+	var frag = document.createDocumentFragment();
+	while(el.lastChild){
+		frag.appendChild(el.lastChild);
+	}
+	el.appendChild(frag);
+}
+```
+
+注：这里采用的是原生的DOM操作，
+
+采用documentFragment的形式形成一个缓存区，
+
+再采用appendChild，它有个副作用：如果被插入的节点已经存在于当前文档的文档树中,则那个节点会首先从原先的位置移除,然后再插入到新的位置.
+
+利用这个点可以去除原先位置的节点，再插入新的排序后的节点
