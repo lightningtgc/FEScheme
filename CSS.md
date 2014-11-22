@@ -100,6 +100,8 @@
 
 ### 行内元素 vs 块级元素
 
+[分类图](http://sfault-image.b0.upaiyun.com/314/808/3148089123-545b1a9891d94)
+
 注： 可从默认display的值体现
 
 * 内联元素(inline)有：a b span select strong
