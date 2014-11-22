@@ -870,6 +870,15 @@ HTML5标准 ： 4毫秒
 
 ### source-map
 
+技能：在调试过程中，找到压缩代码对应的源文件位置
+
+[参见资源-官方文档](https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit)
+
+[参见资源-软老师教程](http://javascript.ruanyifeng.com/tool/sourcemap.html)
+
+[参见资源-sass，coffe，grunt之类的sourcemap](http://code.tutsplus.com/tutorials/source-maps-101--net-29173)
+
+注：目前chrome已默认开启对sourcemap的支持，grunt，gulp等构建工具的插件们部分默认也支持了sourcemap。
 ### 反转DOM元素的子节点
 
 上代码：
