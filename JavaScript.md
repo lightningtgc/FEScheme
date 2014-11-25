@@ -879,6 +879,7 @@ HTML5标准 ： 4毫秒
 [参见资源-sass，coffe，grunt之类的sourcemap](http://code.tutsplus.com/tutorials/source-maps-101--net-29173)
 
 注：目前chrome已默认开启对sourcemap的支持，grunt，gulp等构建工具的插件们部分默认也支持了sourcemap。
+
 ### 反转DOM元素的子节点
 
 上代码：
@@ -899,3 +900,23 @@ function reverseDom(el){
 再采用appendChild，它有个副作用：如果被插入的节点已经存在于当前文档的文档树中,则那个节点会首先从原先的位置移除,然后再插入到新的位置.
 
 利用这个点可以去除原先位置的节点，再插入新的排序后的节点
+
+### js赋值顺序
+
+基本所有语言的赋值都是从右向左开始赋值
+
+eg：
+```js
+var y = 1, x = y = typeof x;
+  x; // undefined
+```
+
+注：这里核心在 x = y = typeof x;
+
+先去求typeof x的值（'undefined'），
+
+此时先赋值给了y，y变成了字符串'undefined'，
+
+y再赋值给了x，x也变成了'undefined'了。
+
+
