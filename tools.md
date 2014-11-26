@@ -145,3 +145,5 @@ function addEventHandler(el, eventType, handler){
 
 [支持ES6模块写法的grunt插件](https://github.com/sindresorhus/grunt-6to5)
 
+[browserify ES6 transform](https://github.com/thlorenz/es6ify)
+
