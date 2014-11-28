@@ -235,6 +235,29 @@ update：iOS8 已经支持了设置 border-width: 0.5px 来实现1px border
 }
 ```
 
+#### 检测iPhone 6 和 iPhone 6+
+
+```css
+/* iphone 6 */
+
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+
+  .test-style {
+	content: 'iPhone 6 style';
+  }
+
+}
+
+/* iphone6 plus */
+
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+
+  .test-style{
+	content: 'iPhone 6 plus style';
+  }
+
+}
+```
 
 ### 动画闪烁Hack：
 [一个旋转发生闪烁的例子](http://css-tricks.com/almanac/properties/b/backface-visibility/)
