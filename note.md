@@ -25,3 +25,8 @@ else 的判断采用形如 {{^repo}} ... {{/repo}} 进行处理，
 同时Object可以传一个值为函数的key，可以在模版中对渲染的数据进行处理。
 
 ### 2.artTemplate
+
+
+### iWatch Design
+
+地址：https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/WatchHumanInterfaceGuidelines/index.html
