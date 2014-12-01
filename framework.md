@@ -1,3 +1,5 @@
+
+
 ##前端架构设计
 
 ###1.构建工具：
@@ -26,3 +28,7 @@
 满足[REST](http://en.wikipedia.org/wiki/Representational_state_transfer)的应用程序或设计
 
 [参考资源](http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming)
+
+## 框架类
+
+### [Angularjs](https://github.com/angular/angular.js)
