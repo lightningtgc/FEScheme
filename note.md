@@ -30,3 +30,8 @@ else 的判断采用形如 {{^repo}} ... {{/repo}} 进行处理，
 ### iWatch Design
 
 地址：https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/WatchHumanInterfaceGuidelines/index.html
+
+### Angularjs 文档
+
+https://drive.google.com/#folders/0BxgtL8yFJbacUnUxc3l5aTZrbVk
+
