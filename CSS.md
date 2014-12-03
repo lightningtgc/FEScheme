@@ -5,7 +5,7 @@
 ##### 1.已知宽高
 
 ```css
-.cneter-middle {
+.center-middle {
     position: absolute; 
     left: 50%;
     top: 50%;
@@ -22,7 +22,7 @@
 另一种方法: margin:auto; (support >=IE9)
 
 ```css
-.cneter-middle{
+.center-middle{
 	position:absolute;
 	top:0;
 	right:0;
