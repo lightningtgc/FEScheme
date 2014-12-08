@@ -1,5 +1,9 @@
 ## 1.API
 
+### FileReader
+
+[FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
+
 ###Navigator.vibrate()
 
 *[介绍](https://developer.mozilla.org/en-US/docs/Web/API/Navigator.vibrate)
