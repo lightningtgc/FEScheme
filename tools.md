@@ -74,6 +74,10 @@ grunt.initConfig({
 });
 ```
 
+#### 自动化工具
+
+[phantomjs](http://phantomjs.org/)
+
 ### 代码工具块
 
 #### 1.判断DOM是否ready（全浏览器兼容）
