@@ -523,6 +523,17 @@ function convertThousands(num) {
        return (num || 0).toString().replace(/(d)(?=(?:d{3})+$)/g, '$1,');
 }
 ```
+##### 匹配单行与多行注释
+
+```js
+// Match single and multi-line comments
+var reg1 = /\/\/.+?(?=\n|\r|$)|\/\*[\s\S]+?\*\//g;
+
+// Match single comments  contain  multi-line and multi-line comments contain single
+var reg2 = /\/\/.*?\/?\*.+?(?=\n|\r|$)|\/\*[\s\S]*?\/\/[\s\S]*?\*\//g;
+
+```
+
 ###hasOwnProperty
 
 在原型链上查找属性比较耗时，对性能有副作用.
