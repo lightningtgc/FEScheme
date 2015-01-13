@@ -35,3 +35,14 @@ else 的判断采用形如 {{^repo}} ... {{/repo}} 进行处理，
 
 https://drive.google.com/#folders/0BxgtL8yFJbacUnUxc3l5aTZrbVk
 
+### git 本地提交自动登录，保存用户名密码方法
+
+打开 `setting >> git >>  Edit global .gitconfig `
+
+添加以下内容即可：
+
+```
+[credential]
+helper = store
+```
+
