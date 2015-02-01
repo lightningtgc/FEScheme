@@ -942,6 +942,41 @@ var y = 1, x = y = typeof x;
 
 y再赋值给了x，x也变成了'undefined'了。
 
-#### 逗号运算符 ,
+#### 逗号(Comma)运算符 ,
 
 优先级比较低，一般作为取值运算时，取最后一个值。
+
+eg: var num = (1,2,3); // num === 3 
+
+
+#### 精确度度
+
+`parseFloat() ` 最多精确到小数点后17位。
+
+
+#### isFinite(value)
+
+判断value是否为有限的值，
+
+如果是NaN与正负无穷的话则返回false。
+
+该方法会调用一次Number(value),如果Number()出来的值是NaN则isFinite()会返回false。
+
+eg:
+```js
+isFinite(null) // 通过Number()转为了0，所以为true
+isFinite(undefined) // false
+isFinite('10') //true
+isFinite('10k') // false
+isFinite('') // true
+isFinite(0/0) ; // false 
+```
+
+#### setTimeout与setInterval 传字符串问题
+
+如果在这两个方法中传了字符串的话会调用eval在全局作用域中执行，速度慢且不安全。
+
+```js
+setInterval('doSomething()', 1000); // bad
+setInterval(doSomething, 1000); // good
+```
