@@ -949,7 +949,7 @@ y再赋值给了x，x也变成了'undefined'了。
 eg: var num = (1,2,3); // num === 3 
 
 
-#### 精确度度
+#### 精确度相关
 
 `parseFloat() ` 最多精确到小数点后17位。
 
@@ -974,9 +974,44 @@ isFinite(0/0) ; // false
 
 #### setTimeout与setInterval 传字符串问题
 
-如果在这两个方法中传了字符串的话会调用eval在全局作用域中执行，速度慢且不安全。
+如果在这两个方法中传了字符串的话会执行与eval一样效果的操作，有性能问题且不安全。
 
 ```js
 setInterval('doSomething()', 1000); // bad
 setInterval(doSomething, 1000); // good
 ```
+
+#### 基本简单的运算要比函数调用的速度并不一定更快
+
+```js
+var min = Math.min(a,b);
+A.push(v);
+
+var min = a < b ? a : b; 
+A[A.length] = v;
+```
+
+在jsperf中实际性能对比：随着数据的复杂度增加，浏览器内置函数（如push，concat）的性能速度也越来越快
+
+结论：在现代浏览器中还是不需要一些奇技淫巧来追求性能上得突破，用内置函数既可。
+
+#### 两个数组合并
+
+```js
+var array1 = [1, "foo" , {name: "gc"} , -2458];
+var array2 = ["gc" , 555 , 100];
+
+array1 = array1.concat(array2) // 用concat并不会影响到array1，故需要再赋值
+
+// 下面代码与上面效果相同，但速度却快了近一倍
+var array1 = [1, "foo" , {name: "gc"} , -2458];
+var array2 = ["gc" , 555 , 100];
+Array.prototype.push.apply(array1, array2);  //这里会改变array1的值，array2不变
+
+```
+
+注：concat可以传多个数组参数进行数组拼接，且不会影响参数的值，
+
+而push.apply需要重新封装一层,随着多个数组参数的增加，性能也比concat要越来越差
+
+故push.apply的应用场景较少，仅在能改变数组本身，且是两个数组之间的拼接才能发挥优势
