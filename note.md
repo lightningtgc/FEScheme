@@ -46,3 +46,13 @@ https://drive.google.com/#folders/0BxgtL8yFJbacUnUxc3l5aTZrbVk
 helper = store
 ```
 
+### Bower register 连接失败发布不了问题
+
+首先确保bower与git已安装上，对应版本的tag也在github上提交了。
+
+将git请求重写为https请求，才能成功发布：
+
+
+```
+git config --global url."https://".insteadOf git://
+```
