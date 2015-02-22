@@ -145,6 +145,25 @@ frame = window.requestAnimationFrame ||
 //当传true时，表示会将子节点一起克隆
 newNode=oldNode.cloneNode(true);
 ```
+
+### 拷贝数组，去除对象引用
+
+```js
+var cloneArr = function(arr) {
+  return JSON.parse(JSON.stringify(arr));
+}
+```
+
+或者
+
+```js
+var cloneArr = function(arr) {
+  return arr.slice(0);
+}
+```
+
+注： splice会影响改变数组本身,不适合做这种效果。
+
 ### toLocaleUpperCase vs toUpperCase
 
 两者都是转换为大写字母，
