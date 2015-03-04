@@ -173,6 +173,18 @@ vmax: "vh或vw中最大的那一个"
 IE 10+, Firefox 19+, Chrome 34+, Safari 7+, Android 4.4+, iOS 6+
 ```
 
+### HSL && HSLA单位
+
+H: Hue 色相 (0或360表示红色，120表示绿色，240表示蓝色)
+
+S：Saturation 饱和度 (0% ~ 100%)
+
+L: Lightness 明度 (0% ~ 100%)
+
+A: Alpha 透明度 (0 ~ 1)
+
+### DPI: Dots Per Inch 每英寸所打印的点数(像素)
+
 ### pinter-events 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events" target="_blank">参考资源</a>
 
