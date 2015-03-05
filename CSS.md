@@ -162,9 +162,12 @@ eg:
 
 但两者的区别在于vw是与父元素无关的，与viewport大小相关。
 
-vw："viewport width";
-vh: "viewport height";
-vmin: "vh或vw中最小的那一个"；
+vw："viewport width"
+
+vh: "viewport height"
+
+vmin: "vh或vw中最小的那一个"
+
 vmax: "vh或vw中最大的那一个"
 
 浏览器支持情况：
@@ -189,6 +192,7 @@ A: Alpha 透明度 (0 ~ 1)
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events" target="_blank">参考资源</a>
 
 技能：当设置为none时，可以使按钮失效，
+
 eg:可以用于多个如下节点，阻止其默认事件
 （多个该节点同时设置disabled可能会有些失效）
 
@@ -208,6 +212,7 @@ CSS:
 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-smooth" target="_blank">参考资源</a>
 
 技能：在webkit内核里面控制字体的渲染，
+
 使用antialiased这个值可以消除锯齿，让字体更加平滑
 
 属性：none用于小像素的文本、subpixel-antialiased浏览器默认的、antialiased反锯齿
@@ -220,6 +225,7 @@ CSS:
 由于移动端viewport会将1px转化为2px，所以在设计师眼中总会感觉边缘线太粗了。
 
 解决方案：
+
 1.采用一个两像素的图片，一个像素透明，一个像素为所需要的图片，
 可以采用border-image等形式加载该图片，无兼容问题
 缺点：图片颜色不太可控，制作图片成本高，如果是固定的颜色则可以考虑
@@ -311,6 +317,7 @@ text-overflow: ellipsis;
 ### 排版
 
 1.serif 衬线字体（白体） 如宋体、细明体，适合古代气息，一般用于印刷业，容易造成视觉疲劳
+
 2.sans-serif 无衬线字体（黑体）  sans在法语中是“无”的意思，如微软雅黑 适合现代气息，一般用于电脑屏幕显示 
 
 注：为了更好的用户体验，一般一行适合放35-40个字左右
@@ -319,7 +326,7 @@ text-overflow: ellipsis;
 
 ### 引起 reflow 的操作
 
-* 改变css样式的leeft,top,width等
+* 改变css样式的left,top,width等
 * 改变窗囗大小
 * 改变文字大小
 * 添加/删除样式表
@@ -455,7 +462,7 @@ WB_text [action-type="feed_list_url"]{
 
 * 无单位时继承了系数，子元素会分别计算各自行距（推荐使用）
 
-### PC browser css hack
+### PC browser CSS hack
 
 1. 样式名前使用* ： IE6，7
 
