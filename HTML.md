@@ -177,3 +177,4 @@ Accept-Encoding: gzip,deflate,sdch
 </datalist>
 ```
 
+### 页面设置强缓存 
