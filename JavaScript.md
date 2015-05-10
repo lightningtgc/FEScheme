@@ -10,7 +10,7 @@
 
 ### js将图片转为base64
 
-利用[HTMLCanvasElement.toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)
+利用[HTMLCanvasElement.toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)这个Canvas的方法来转换。
 
 ```js
   function getImageBase64(img) {
@@ -47,7 +47,7 @@
 
 注：该方法可将同域或者支持安全跨域的网站的图片转为base64，
 
-image onload 是异步的，需要
+image onload 是异步的，需要注意一下，或者用promise的方法来封装。
 
 ###Navigator.vibrate()
 
