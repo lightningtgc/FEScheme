@@ -2,7 +2,7 @@
 
 ### FileReader
 
-操作文件接口，可以用于转base64，文件图片上传等。
+操作文件接口，可以用于文件图片上传，上传图片转base64，结合canvas压缩图片大小等。
 
 [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
 
