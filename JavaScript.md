@@ -8,6 +8,47 @@
 
 [Using files from web applications](https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications)
 
+### js将图片转为base64
+
+利用[HTMLCanvasElement.toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)
+
+```js
+  function getImageBase64(img) {
+      var canvas = document.createElement("canvas");
+      canvas.width = img.width;
+      canvas.height = img.height;
+
+      var ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0, img.width, img.height);
+
+      var dataURL = canvas.toDataURL("");
+      return dataURL;
+  }
+  
+ function convertImageToBase64(path, callback) {
+    if (!path) {
+    	return;
+    }
+    
+    var imgDOM = document.createElement('img');
+    imgDOM.src = path;
+    
+    imgDOM.onload =function() {
+        var data = getImageBase64(imgDOM);
+        if (typeof callback === 'function') {
+       	  callback(data);
+       	}
+    }
+
+    document.body.appendChild(imgDOM);
+  }
+
+```
+
+注：该方法可将同域或者支持安全跨域的网站的图片转为base64，
+
+image onload 是异步的，需要
+
 ###Navigator.vibrate()
 
 *[介绍](https://developer.mozilla.org/en-US/docs/Web/API/Navigator.vibrate)
