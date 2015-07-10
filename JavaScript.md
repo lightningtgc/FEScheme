@@ -1105,8 +1105,13 @@ function setRating(rating) {
 #### switch 使用 === 来枚举
 
 case判断的时候不会进行转换
+
 #### String(x) 不会返回一个 object 但会返回一个 string
 
-例如 typeof String(1) === "string"
+例如 typeof String(1) === "string" //没有用new的话，返回相应类型
 
 而  typeof new String(1) === 'object'
+
+String(1) === '1' // true
+
+new String(1) === '1' // false
