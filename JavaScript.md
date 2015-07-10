@@ -1101,3 +1101,7 @@ function setRating(rating) {
 #### JavaScript中最大的数字
 
 2^53
+
+#### switch 使用 === 来枚举
+
+case判断的时候不会进行转换
