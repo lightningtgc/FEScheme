@@ -1097,3 +1097,7 @@ function setRating(rating) {
   "★★★★★☆☆☆☆☆".substring(5 - rating, 10 - rating )
 }
 ```
+
+#### JavaScript中最大的数字
+
+2^53
