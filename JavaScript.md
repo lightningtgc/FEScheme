@@ -283,6 +283,8 @@ undefined 表示未定义，不能被delete删除
 
 null 表示一个空对象指针，所以typeof null 会返回object
 
+'typeof 对原生非可调用对象会始终返回 "object"'
+
 undefined 派生自null
 
 ### 跨域
