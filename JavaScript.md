@@ -688,6 +688,7 @@ strokeStyle： 线的颜色
 
 注：还可以使用closePath方法，自动绘制一条当前点到起点的直线，形成一个封闭图形，减少使用一次lineto方法。
 
+#### Canvas与SVG的区别
 
 ### slice && substr && substring 区别
 
