@@ -23,3 +23,5 @@ $.ajaxSettings.beforeSend = function(xhr) {
 [注意事项](https://babeljs.io/docs/advanced/caveats/)
 
 [箭头函数绑定this问题](https://github.com/babel/babel/issues/814)
+
+[Loose Mode](https://babeljs.io/docs/advanced/loose/#es6-modules)
