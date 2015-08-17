@@ -16,3 +16,8 @@ $.ajaxSettings.beforeSend = function(xhr) {
 ```
 
 注: 加上withCredentials = true 是为了用xhr2跨域能传cookies到后台
+
+
+### Babel 兼容IE8问题
+
+[注意事项](https://babeljs.io/docs/advanced/caveats/)
