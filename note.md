@@ -56,3 +56,7 @@ helper = store
 ```
 git config --global url."https://".insteadOf git://
 ```
+
+### 编码相关问题
+
+-- utf-8 与gbk的区别
