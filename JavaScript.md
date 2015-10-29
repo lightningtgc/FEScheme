@@ -817,6 +817,13 @@ element.scrollHeight - element.scrollTop === element.clientHeight
 
 <img src="https://mdn.mozillademos.org/files/673/scrollTop.png"/>
 
+*注：ios中有个特性，当input框在底部，focus时会将页面往上托,要想将页面顶部往下拉回原处可用
+
+```js
+document.body.scrollTop = 0;
+```
+通过document.body.scrollTop可以得知弹出的键盘的高度。
+
 
 ### Location.replace()
 
