@@ -1,5 +1,7 @@
 ### 规范大纲
 
+[ES6文档规范](http://www.ecma-international.org/ecma-262/6.0/index.html)
+
 ### 新特性列表
 
 
