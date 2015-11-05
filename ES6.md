@@ -21,3 +21,7 @@ let bb = [...aa]; // [3, 6, 9]
 let bb = {...aa}; // {"0":3, "1":6, "2":9} 转为以index为key的对象
 
 ```
+
+### 资料
+
+[ES6测试题](http://perfectionkills.com/javascript-quiz-es6/)
