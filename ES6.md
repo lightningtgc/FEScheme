@@ -24,4 +24,7 @@ let bb = {...aa}; // {"0":3, "1":6, "2":9} 转为以index为key的对象
 
 ### 资料
 
+[Learn ES6 by doing it](http://es6katas.org/)
+
 [ES6测试题](http://perfectionkills.com/javascript-quiz-es6/)
+
