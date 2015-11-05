@@ -30,3 +30,5 @@ let bb = {...aa}; // {"0":3, "1":6, "2":9} 转为以index为key的对象
 
 [ES6测试题](http://perfectionkills.com/javascript-quiz-es6/)
 
+[测试题答题解析](https://gist.github.com/DmitrySoshnikov/3928607cb8fdba42e712)
+
