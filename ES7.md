@@ -2,3 +2,4 @@
  https://github.com/wycats/javascript-decorators
 
 ### 废除
+* Object Observe
