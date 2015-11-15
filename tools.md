@@ -154,5 +154,5 @@ function addEventHandler(el, eventType, handler){
 [traceur-compiler](https://github.com/google/traceur-compiler)
 
 ### Coding Style auto tools
-
+https://github.com/feross/standard
 
