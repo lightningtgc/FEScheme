@@ -152,3 +152,7 @@ function addEventHandler(el, eventType, handler){
 [browserify ES6 transform](https://github.com/thlorenz/es6ify)
 
 [traceur-compiler](https://github.com/google/traceur-compiler)
+
+### Coding Style auto tools
+
+
