@@ -1133,3 +1133,5 @@ case判断的时候不会进行转换
 String(1) === '1' // true
 
 new String(1) === '1' // false
+
+#### H5录制视频
