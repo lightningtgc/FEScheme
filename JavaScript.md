@@ -1137,7 +1137,7 @@ new String(1) === '1' // false
 #### H5录制视频
 
 http://www.w3.org/TR/2013/CR-html-media-capture-20130509/
-```
+```html
 <form action="server.cgi" method="post" enctype="multipart/form-data">
   <input type="file" name="video" accept="video/*" capture>
   <input type="submit" value="Upload">
