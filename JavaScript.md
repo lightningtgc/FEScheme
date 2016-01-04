@@ -1135,3 +1135,5 @@ String(1) === '1' // true
 new String(1) === '1' // false
 
 #### H5录制视频
+
+http://www.w3.org/TR/2013/CR-html-media-capture-20130509/
