@@ -1,12 +1,10 @@
-### 官方文档
+### ES7 
 
 #### [Decorators修饰符:](https://github.com/wycats/javascript-decorators)
 
-https://github.com/wycats/javascript-decorators
-
 #### [async-await:](https://github.com/tc39/ecmascript-asyncawait)
 
-http://tc39.github.io/ecmascript-asyncawait/
+规范文档：http://tc39.github.io/ecmascript-asyncawait/
 ```js
   async function chainAnimationsAsync(elem, animations) {
         let ret = null;
