@@ -32,3 +32,5 @@
 ## 框架类
 
 ### [Angularjs](https://github.com/angular/angular.js)
+
+### [Angular 2](https://angular.io)
