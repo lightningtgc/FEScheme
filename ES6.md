@@ -38,4 +38,5 @@ let bb = {...aa}; // {"0":3, "1":6, "2":9} 转为以index为key的对象
 
 ### 注意点
 
+1.export default为一个object时，不能以解构形式import到其他地方，此时理解为字段
 
