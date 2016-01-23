@@ -38,6 +38,6 @@ MVVM系列：
 * [Angular 2](https://angular.io)
 
 ### 图表类
-
 * [D3.js](https://d3js.org/)
+* [ECharts](http://echarts.baidu.com/)
 
