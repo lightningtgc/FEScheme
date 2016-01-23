@@ -40,4 +40,5 @@
  * [D3.js](https://d3js.org/)
  * [ECharts](http://echarts.baidu.com/)
  * [Highcharts](http://www.highcharts.com/)
+ * [NVD3.js](http://nvd3.org/)
 
