@@ -33,8 +33,11 @@
 
 ### 框架类
 
-#### [Angularjs](https://github.com/angular/angular.js)
-
-#### [Angular 2](https://angular.io)
+MVVM系列：
+* [Angularjs](https://github.com/angular/angular.js)  
+* [Angular 2](https://angular.io)
 
 ### 图表类
+
+* [D3.js](https://d3js.org/)
+
