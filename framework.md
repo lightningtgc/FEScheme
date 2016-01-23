@@ -33,12 +33,11 @@
 
 ### 框架类
 
-MVVM系列：
-* [Angularjs](https://github.com/angular/angular.js)  
-* [Angular 2](https://angular.io)
-
-### 图表类
-* [D3.js](https://d3js.org/)
-* [ECharts](http://echarts.baidu.com/)
-* [Highcharts](http://www.highcharts.com/)
+* MVVM系列：
+ * [Angularjs](https://github.com/angular/angular.js)  
+ * [Angular 2](https://angular.io)
+* 图表类
+ * [D3.js](https://d3js.org/)
+ * [ECharts](http://echarts.baidu.com/)
+ * [Highcharts](http://www.highcharts.com/)
 
