@@ -31,7 +31,7 @@
 
 ## 常见框架或类库
 
-### 框架类
+### 框架与库
 
 * MVVM系列：
  * [Angularjs](https://github.com/angular/angular.js)  
@@ -41,4 +41,6 @@
  * [ECharts](http://echarts.baidu.com/)
  * [Highcharts](http://www.highcharts.com/)
  * [NVD3.js](http://nvd3.org/)
+* 库
+ * [RxJS](https://github.com/Reactive-Extensions/RxJS)
 
