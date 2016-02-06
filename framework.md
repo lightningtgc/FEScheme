@@ -3,6 +3,8 @@
 ##前端架构设计
 
 ###1.构建工具：
+* [Webpack](https://webpack.github.io/)
+  特点：内置多种常用工具与功能
 
 * [grunt](http://gruntjs.com/)
  
