@@ -9,7 +9,7 @@
     position: absolute; 
     left: 50%;
     top: 50%;
-    margin-top: -150px;    /* 高度的一半 */
+    margin-top: -150px;/* 高度的一半 */
     margin-left: -100px;    
     
     width:200px;
@@ -19,7 +19,7 @@
 
 注：兼容性不错，但需知道宽高才能计算margin的值，可借助js进行计算
 
-另一种方法: margin:auto; (support >=IE9)
+另一种方法: margin:auto; (support >= IE9)
 
 ```css
 .center-middle {
@@ -53,7 +53,7 @@
 
 可用于固定了宽度，内容是动态变化的窗口
 
-##### 3.table-cell方法 (support <=IE8)
+##### 3.table-cell方法 (support <= IE8)
 
 垂直居中一个img元素
 
