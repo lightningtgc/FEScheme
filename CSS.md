@@ -22,7 +22,7 @@
 另一种方法: margin:auto; (support >=IE9)
 
 ```css
-.center-middle{
+.center-middle {
 	position:absolute;
 	top:0;
 	right:0;
