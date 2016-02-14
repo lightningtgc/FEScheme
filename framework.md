@@ -45,4 +45,9 @@
  * [NVD3.js](http://nvd3.org/)
 * 库
  * [RxJS](https://github.com/Reactive-Extensions/RxJS)
+ * 
+
+## Angular 2 相关
+
+[AngularJS-2-Status-Preview](http://ng-learn.org/2014/03/AngularJS-2-Status-Preview/)
 
