@@ -49,7 +49,6 @@
 
 ## Angular 2 相关
 
-[AngularJS-2-Status-Preview](http://ng-learn.org/2014/03/AngularJS-2-Status-Preview/)
-
-[zone.js](https://github.com/angular/zone.js/)
+* [AngularJS-2-Status-Preview](http://ng-learn.org/2014/03/AngularJS-2-Status-Preview/)
+* [zone.js](https://github.com/angular/zone.js/)
 
