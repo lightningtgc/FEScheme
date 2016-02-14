@@ -51,4 +51,5 @@
 
 * [AngularJS-2-Status-Preview](http://ng-learn.org/2014/03/AngularJS-2-Status-Preview/)
 * [zone.js](https://github.com/angular/zone.js/)
+* [Design Documents](https://drive.google.com/drive/folders/0BxgtL8yFJbacUnUxc3l5aTZrbVk)
 
